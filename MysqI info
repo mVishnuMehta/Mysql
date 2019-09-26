@@ -46,3 +46,9 @@ For eg  table1
         Keshav
         Keshav
         
+   Note
+   we have to use a group by clause with the aggregate functions if we are display more than a single column.
+   Select count(distinct(names)) from empl;
+   Select count(distinct(names)),city from empl group by gender;
+   
+        
