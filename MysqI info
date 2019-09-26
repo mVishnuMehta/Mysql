@@ -1,3 +1,48 @@
 Inner Join-
-Eg- Select Column1,Column2 from table1 1(Alias Name) inner join table 2(Alias Name) ON(Used for menyioning the condition to combine
-the data of 2 table) 1.xname=2.xname;
+Eg- Select Column1,Column2 from table1 1(Alias Name) inner join table 2(Alias Name) ON(Used for menyioning the condition to 
+combine the data of 2 table) 1.xname=2.xname;
+
+Outer left join-
+Eg-Select column1,column2 from table1 aliasnameoftable1 outer left join table2 aliasameoftable2 ON aliasameoftable1.xname=alias
+nameoftable2.xname.
+In this it will take the value of null automatically for the right table if their is no record for table2 corresponding to 
+table 1.
+
+Outer right join-
+Eg-Select column1,column2 from table1 aliasnameoftable1 outer right join table2 aliasameoftable2 ON aliasameoftable1.xname=alias
+nameoftable2.xname.
+In this it will take the value of null automatically for the left table if their is no record for table1 corresponding to 
+table 2.
+
+full outer join-
+In this it will display null value for record for both the tables if their is no adequate matching of the two tables in respect
+to each other.
+
+Cross join-
+It will display the cartesian product.
+For eg  table1
+        Name      City
+        Vishnu    Ajmer
+        Arihant   Beawar
+        Keshav    Varanasi
+        table2
+        city        State
+        Ajmer       Rajasthan
+        Ahmedabad   Gujarat
+        Indore      Madhya Pradesh
+        
+    If we will use cross join, it will dispaly the cartesian product of two tables which is
+        Select Name,State from table1 cross join table2;
+        No need of using on condition
+        
+        Name    State
+        Vishnu  Rajasthan
+        Vishnu  MadhyaPradesh
+        Vishnu  Gujarat
+        Arihant
+        Arihant
+        Arihant
+        Keshav
+        Keshav
+        Keshav
+        
