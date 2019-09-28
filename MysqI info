@@ -51,4 +51,8 @@ For eg  table1
    Select count(distinct(names)) from empl;
    Select count(distinct(names)),city from empl group by gender;
    
-        
+   Eg of using avg aggregate function
+   SELECT avg(total_death_cover),gender FROM dbo.MemberCover co inner join dbo.Member mem ON co.total_death_cover=mem.MemberKey
+   group by gender;
+
+
